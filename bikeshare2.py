@@ -43,7 +43,7 @@ def get_filters():
                 break
             else:
                 print("Incorrect type. That's not an string or proper date name!")
-    # TO DO: get user input for month (all, january, february, ... , june)
+    # Get user input for month (all, january, february, ... , june)
     # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
     print('-'*40)
     return city, month, day
