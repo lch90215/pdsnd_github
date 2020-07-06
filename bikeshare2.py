@@ -44,7 +44,7 @@ def get_filters():
             else:
                 print("Incorrect type. That's not an string or proper date name!")
     # Get user input for month (all, january, february, ... , june)
-    # TO DO: get user input for day of week (all, monday, tuesday, ... sunday)
+    # Get user input for day of week (all, monday, tuesday, ... sunday)
     print('-'*40)
     return city, month, day
 
@@ -88,7 +88,7 @@ def time_stats(df):
     df['hour'] = df['Start Time'].dt.hour
     monthnumber=df['month'].mode()[0]
     monthname = months[monthnumber-1].title()
-    # TO DO: display the most common month
+    # Display the most common month
     print("\nThe most common month is: {}" .format(monthname))
     # TO DO: display the most common day of week
     print("\nThe most common day is:{}" .format(df['day_of_week'].mode()[0]))
